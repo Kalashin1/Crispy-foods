@@ -1,0 +1,231 @@
+// ======= RESET RULES
+*, *::before, *::after{
+	margin: 0;
+	font-family: consolas;
+	font-size: 14px;
+	padding: 0; 
+	position: relative;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+// mixin for controlling stuffs at different screen sizes
+
+@mixin mQ($arg...){
+    @if(length($arg) == 1)
+    {
+        @media screen and (max-width: nth($arg , 1)){
+            @content
+        }
+    };
+    @if(length($arg) == 2)  
+    {
+        @media screen and (min-width: nth($arg, 1)) and (max-width: nth($arg, 2)){
+            @content;
+        }
+    }
+}
+
+
+.bold
+{
+    font-weight: bold;
+}
+
+#header{
+    background: url(../../images/slider/food-dinner-lunch-unhealthy-70497.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include mQ(1080px, 1800px){
+        min-height: 700px;
+        clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
+        .nav-wrapper{
+            background: transparent;
+            padding: .1rem .3rem;
+    
+            &:hover{
+                background: #fff;
+            }
+    
+            
+        }
+    }
+    @include mQ(1080px){
+        height: 600px;
+        .nav-wrapper{
+            background: #fff;
+            padding: .1rem .3rem;
+        }
+    }
+
+    // making the nav transparent and white on hover
+    
+
+
+
+
+    // ======STYLING RECIPE DROPDOWN
+   
+}
+
+
+#services{
+    position: relative;
+    z-index: 2;
+    
+    
+   .row{
+        padding: .5rem;
+   }
+
+    .col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .box{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: flex;
+        margin: 2%;
+        justify-content: center;
+        align-items: center;
+
+        .spoon{
+            width: 35px;
+            height: 35px;
+            fill: #fff;
+        }
+    }
+}
+
+.rule{
+    display: block;
+    width: 100px;
+    height: 4px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1rem
+}
+
+#about{
+    // clip-path: polygon(0 15%, 0 100%, 100% 85%, 100% 0);
+    padding-top: 1rem;
+    
+
+    .col{
+        margin-bottom: .5rem
+    }
+}
+
+#special-menu{
+    padding-top: 2rem;
+    .owl-dot {
+        display: inline-block;
+        margin: 0 5px;
+        width: 20px;
+        height: 5px;
+        position: relative;
+        left: 50%;
+        @include mQ(670px){
+            left: 35%;
+        }
+        top: 1rem;
+        transform: translateX(-50%);
+        // border-radius: 50%;
+        background-color: #ddd !important;
+      }
+      
+    //   active class for owl dots for both header and projects section
+     .owl-dot.active{
+        background-color: #ff5821 !important;
+      }
+
+    .owl-carousel{
+        display: block;
+        .owl-item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            transition: .4s all;
+            position: relative;
+
+            &:hover{
+                transform: scale(1.05);
+                .circle-div{
+                    border-color: #fff;
+                    background: #D61800;
+                }
+            }
+
+            .circle-div{
+                width: 150px;
+                height: 150px;
+                display: flex;
+                transition: .4s all;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid #fff;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 2rem;
+                color: #fff;
+                border-radius: 50%;
+                background:transparent;
+            }
+
+            .food-name{
+                position: absolute;
+                top: 65%;
+                transform: translateY(-65%);
+            }
+        }
+
+         
+    }
+}
+
+#menu{
+    .col{
+        padding: .5rem;
+        height: 210px;
+        overflow: hidden;
+    }
+}
+
+#testimonies{
+
+    .owl-dot {
+        display: inline-block;
+        margin: 0 5px;
+        width: 20px;
+        height: 5px;
+        position: relative;
+        left: 50%;
+        top: 1rem;
+        transform: translateX(-50%);
+        // border-radius: 50%;
+        background-color: #ddd !important;
+      }
+      
+    //   active class for owl dots for both header and projects section
+     .owl-dot.active{
+        background-color: #ff5821 !important;
+      }
+
+
+    .customer-details{
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}

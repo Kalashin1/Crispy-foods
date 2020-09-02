@@ -1,0 +1,416 @@
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" type="text/css" href="assets/lib/font awesome/all.min.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="assets/lib/aos/aos.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="assets/styles/colors.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="assets/styles/style.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="/assets/lib/materialize/material-icons.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="assets/lib/materialize/materialize.min.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="assets/lib/owl/owl.carousel.min.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="assets/lib/owl/owl.theme.default.min.css">
+    <script src="assets/lib/jQuery/jquery.min.js"></script>
+    <title>FoodKal - The Best Online Restuarant</title>
+    <scrpt src="assets/lib/angular/angular.min.js"></script>
+    <scrpt src="assets/lib/angular/angular-route.min.js"></script>
+</head>
+<body class="bg-paper">
+    
+    <header id="header">
+        <!-- NAVBAR -->
+        <nav class="nav-wrapper">
+            <a class="brand-logo left" href="index.html">
+                <img src="logo.png" style="width: 100px; height: 50px;">
+            </a>
+
+
+            <!-- =====DESKTOP-NAV===== -->
+            <ul class="hide-on-med-and-down right desktop-nav">
+                <li><a href="#" class="bold red-text">Home</a></li>
+                <li>
+                    <a href="#" class="dropdown-trigger recipe-link bold red-text" data-target="recipe-dropdown">
+                    Recipe</a>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-trigger services-link bold red-text" data-target="services-dropdown">Services</a>
+                </li>
+                <li><a href="#about" class="bold red-text">About</a></li>
+                <li><a href="#blog" class="bold red-text">Blog</a></li>
+                <li><a href="#" class="bold red-text">Contact</a></li>
+            </ul>
+
+            <a class="sidenav-trigger right" data-target="mobile-nav">
+                <i class="material-icons red-text">menu</i>
+            </a>
+
+            <!-- =====MOBILE NAV===== -->
+            <ul class="sidenav hide-on-large-only" id="mobile-nav">
+                <li><a href="#" class="bold red-text">Home</a></li>
+                <li>
+                    <a href="#" class="bold red-text">
+                    Recipe</a>
+                </li>
+                <li>
+                    <a href="#" class="bold red-text">Services</a>
+                </li>
+                <li><a href="#" class="bold red-text">About</a></li>
+                <li><a href="#" class="bold red-text">Blog</a></li>
+                <li><a href="#" class="bold red-text">Contact</a></li>
+            </ul>
+
+        </nav>
+
+
+        <!-- =====DROPDOWN FOR SERVICES===== -->
+        <ul class="dropdown-content" id="services-dropdown">
+            <li><a href="#services" class="red-text">Home Delivery</a></li>
+            <li><a href="#" class="red-text">Catering</a></li>
+            <li><a href="#" class="red-text">Events Planning</a></li>
+            <li><a href="#" class="red-text">Decoration</a></li>
+        </ul>
+
+
+        <!-- =====Dropdown for recipe link -->
+        <ul class="dropdown-content" id="recipe-dropdown">
+            <li><a href="#special-menu" class="red-text">Breakfast</a></li>
+            <li><a href="#menu" class="red-text">Lunch</a></li>
+            <li><a href="#" class="red-text">Dinner</a></li>
+            <li><a href="#" class="red-text">Desert</a></li>
+        </ul>
+
+
+        <h1 class="center-align bold white-text">
+            Welcome To Food Kal
+        </h1>
+        <h5 class="bold center-align white-text" style="margin-top: 5rem">We offer the best online restaurant experience</h5>
+        <div class="center">
+            <a class="btn waves-effect center border-glosswhite red darken-1 white-text" style="border: 1px solid">
+                Order A Meal
+            </a>
+        </div>
+    </header>
+
+    <section class="bg-paper scrollspy" id="services">
+
+        <div class="rule center bg-tomatoes"></div>
+        <h1 class="bold text-tomatoes bold center-align">
+           Our Services
+        </h1>
+        <div class="row bg-paper">
+            <div class="col s12 l3">
+                <div class="box bg-tomatoes">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="spoon" viewBox="0 0 512 512"><path d="M480.1 31.9c-55-55.1-164.9-34.5-227.8 28.5-49.3 49.3-55.1 110-28.8 160.4L9 413.2c-11.6 10.5-12.1 28.5-1 39.5L59.3 504c11 11 29.1 10.5 39.5-1.1l192.4-214.4c50.4 26.3 111.1 20.5 160.4-28.8 63-62.9 83.6-172.8 28.5-227.8z"/></svg>
+                    
+                </div>
+
+                <h5 class="text-tomatoes center-align">Enjoy Food</h5>
+                <p class="text-tomatoes">By the rivers of babylon, There we sat down and when we wept we remembered zion.</p>
+            </div>
+            <div class="col s12 l3">
+                <div class="box bg-tomatoes">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="spoon" viewBox="0 0 288 512"><path d="M216 464h-40V346.81c68.47-15.89 118.05-79.91 111.4-154.16l-15.95-178.1C270.71 6.31 263.9 0 255.74 0H32.26c-8.15 0-14.97 6.31-15.7 14.55L.6 192.66C-6.05 266.91 43.53 330.93 112 346.82V464H72c-22.09 0-40 17.91-40 40 0 4.42 3.58 8 8 8h208c4.42 0 8-3.58 8-8 0-22.09-17.91-40-40-40z"/></svg>
+                    
+                </div>
+
+                <h5 class="text-tomatoes center-align">Good Food</h5>
+                <p class="text-tomatoes">He who lives in a glass house shold not throw stones. If you sell eggs don't start a fight in the market.</p>
+            </div>
+            <div class="col s12 l3">
+                <div class="box bg-tomatoes">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="spoon" viewBox="0 0 448 512"><path d="M368 96h-48V56c0-13.255-10.745-24-24-24H24C10.745 32 0 42.745 0 56v400c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24v-42.11l80.606-35.977C429.396 365.063 448 336.388 448 304.86V176c0-44.112-35.888-80-80-80zm16 208.86a16.018 16.018 0 0 1-9.479 14.611L320 343.805V160h48c8.822 0 16 7.178 16 16v128.86zM208 384c-8.836 0-16-7.164-16-16V144c0-8.836 7.164-16 16-16s16 7.164 16 16v224c0 8.836-7.164 16-16 16zm-96 0c-8.836 0-16-7.164-16-16V144c0-8.836 7.164-16 16-16s16 7.164 16 16v224c0 8.836-7.164 16-16 16z"/></svg>
+                    
+                </div>
+
+                <h5 class="text-tomatoes center-align">Anytime, Anywhere</h5>
+                <p class="text-tomatoes">When you carry your own water you realize the value of every drop. Silence is golden.</p>
+            </div>
+            <div class="col s12 l3">
+                 <div class="box bg-tomatoes">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="spoon" viewBox="0 0 448 512"><path xmlns="http://www.w3.org/2000/svg" d="M633.82 458.1l-90.62-70.05c.19-1.38.8-2.66.8-4.06.05-7.55-2.61-15.27-8.61-21.71-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84c-40.33 8.38-74.66 31.07-97.59 62.57L45.47 3.37C38.49-2.05 28.43-.8 23.01 6.18L3.37 31.45C-2.05 38.42-.8 48.47 6.18 53.9l588.35 454.73c6.98 5.43 17.03 4.17 22.46-2.81l19.64-25.27c5.42-6.97 4.17-17.02-2.81-22.45zM157.23 251.54c-8.61 67.96-36.41 93.33-52.62 110.75-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h241.92L157.23 251.54zM320 512c35.32 0 63.97-28.65 63.97-64H256.03c0 35.35 28.65 64 63.97 64z"/></svg>
+                    
+                </div>
+
+                <h5 class="text-tomatoes center-align">Fast Deliveries</h5>
+                <p class="text-tomatoes">
+                    Every African should remember that they were african before they became something else. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ====ABOUT US===== -->
+    <section id="about" class="bg-white scrollspy">
+        <div class="rule center bg-tomatoes"></div>
+        <h1 class="bold text-tomatoes bold center-align">
+            Our Restaurant
+        </h1>
+        <p class="bold text-tomatoes center-align" style="padding: 0 .3rem;">
+            I made sacrifices to go from where i used to be to where i am now,If you  <br class="hide-on-med-and-down" />must become the person you want to be, you must learn to make sacrifices.
+        </p>
+
+        <div class="container" style="padding: 1rem 0">
+            <div class="row">
+                <div class="col s12 l4 m4">
+                    <img src="images/chicken and chips/18fa158c5c1bd5b9fc90c4e65c668d99.jpg" class="responsive-img">
+                </div>
+                <div class="col s12 l4 m4">
+                     <img src="images/burger/3b91a8e5fc3b19d28870a6595243ae60.jpg" class="responsive-img"/>
+                </div>
+                <div class="col s12 l4 m4">
+                   <img src="images/beef wellington/a8f8a3085c91a7170d128570d5ec2da4.jpg" class="responsive-img"/>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- special menu -->
+    <section id="special-menu" class="bg-white scrollspy">
+        <div class="rule center bg-tomatoes"></div>
+        <h1 class="bold text-tomatoes bold center-align">
+           Special Dishes
+        </h1>
+            <!-- SPECIAL DISHES -->
+           <div class="owl-carousel row">
+               <div class="col s12 l4 owl-item">
+                   <img src="images/english breakfast/2363aa263116f988fedb0756923f9282.jpg" class="responsive-img">
+                   <div class="circle-div border-glosswhite">
+                       $30
+                   </div>
+                   <h4 class="food-name center bold white-text">English Breakfast</h4>
+               </div>
+               <div class="col s12 l4 owl-item">
+                   <img src="images/Eton moss/50f7faeae5f6a89f6d2f63a57ab1ac56.jpg" class="responsive-img">
+                   <div class="circle-div border-glosswhite">
+                    $29
+                </div>
+                <h4 class="food-name center bold white-text">Eton Moss</h4>
+               </div>
+               <div class="col s12 l4 owl-item">
+                   <img src="images/fish and chips/21f44684701310ef2b795d8cf920c88e.jpg" class="responsive-img">
+                   <div class="circle-div border-glosswhite">
+                    $59
+                </div>
+                <h4 class="food-name center bold white-text">Fish and Chips</h4>
+               </div>
+               <div class="col s12 l4 owl-item">
+                   <img src="images/english breakfast/4892e8a244a932e86c04c93bdd6d6c8a.jpg" class="responsive-img">
+                   <div class="circle-div border-glosswhite">
+                    $50
+                </div>
+                <h4 class="food-name center bold white-text">English Meal</h4>
+               </div>
+               <div class="col s12 l4 owl-item">
+                   <img src="images/chicken and chips/3d8993a85d1f55ea831ab4ba4145f21f.jpg" class="responsive-img">
+                   <div class="circle-div border-glosswhite">
+                    $50
+                    </div>
+                    <h4 class="food-name center bold white-text">Chicken and Chips</h4>
+               </div>
+               <div class="col s12 l4 owl-item">
+                <img src="images/lasagna/65c37a4f9918aa7847d71f470829b981.jpg" class="responsive-img">
+                <div class="circle-div border-glosswhite">
+                 $45
+             </div>
+             <h4 class="food-name center bold white-text">Lasagna</h4>
+            </div>
+           </div>
+    </section>
+
+
+    <!-- main menu -->
+    <section id="menu" style="padding-top: 2rem;" class="scrollspy">
+        <div class="rule center bg-tomatoes"></div>
+        <h1 class="bold text-tomatoes bold center-align">
+           Our Dishes
+        </h1>
+        <div class="row" style="padding: 2rem;">
+            <!-- first section -->
+            <div class="col s12 l3 push-l3 m6" style="margin: 0; padding: 0">
+                <img src="images/fish and chips/fish_and_chips.jpg" class="responsive-img">
+            </div>
+            <div class="col s12 l3 bg-glosswhite m6 pull-l3">
+                <h4 class="center bold red-text">Fish & Chips</h4>
+                <p class="bold grey-text left-align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quia sequi earum nobis...</p>
+                <p class="center-align flow-text red-text">&pound;50.00</p>
+            </div>
+            <div class="col s12 l3 m6 push-l3 push-m6" style="margin: 0; padding: 0">
+                <img src="images/burger/f5e1caa71a6d0b3f2f271e66eeb4290b.jpg" class="responsive-img">
+            </div>
+            <div class="col s12 l3 m6 bg-glosswhite pull-m6 pull-l3">
+                <h4 class="center bold red-text">Burger</h4>
+                <p class="bold grey-text left-align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quia sequi earum nobis...</p>
+                <p class="center-align flow-text red-text">&pound;20.00</p>
+            </div>
+            
+
+            <!-- second section -->
+            <div class="col s12 l3 m6" style="margin: 0; padding: 0">
+                <img src="images/corn dog/155581dcccac1c9ea1ec94b368c55743.jpg" class="responsive-img">
+            </div>
+            <div class="col s12 l3 m6 bg-glosswhite">
+                <h4 class="center bold red-text">Corn Dog</h4>
+                <p class="bold grey-text left-align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quia sequi earum nobis...</p>
+                <p class="center-align flow-text red-text">&pound;15.00</p>
+            </div>
+            <div class="col s12 l3 m6 push-m6" style="margin: 0; padding: 0">
+                <img src="images/devilled kidney/bb19712f256dc5a60c7f3f4f52800340.jpg" class="responsive-img">
+            </div>
+            <div class="col s12 l3 m6 pull-m6 bg-glosswhite">
+                <h4 class="center bold red-text">Kidneys</h4>
+                <p class="bold grey-text left-align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quia sequi earum nobis...</p>
+                <p class="center-align flow-text red-text">&pound;20.00</p>
+            </div>
+            <!-- third section -->
+            <div class="col s12 push-l3 m6 l3" style="margin: 0; padding: 0">
+                <img src="images/fish and chips/fish_and_chips.jpg" class="responsive-img">
+            </div>
+            <div class="col s12 pull-l3 m6 l3 bg-glosswhite">
+                <h4 class="center bold red-text">Fish & Chips</h4>
+                <p class="bold grey-text left-align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quia sequi earum nobis...</p>
+                <p class="center-align flow-text red-text">&pound;50.00</p>
+            </div>
+            <div class="col s12 l3 push-l3 m6 push-m6" style="margin: 0; padding: 0">
+                <img src="images/burger/f5e1caa71a6d0b3f2f271e66eeb4290b.jpg" class="responsive-img">
+            </div>
+            <div class="col s12 l3 pull-l3 m6 pull-m6 bg-glosswhite">
+                <h4 class="center bold red-text">Burger</h4>
+                <p class="bold grey-text left-align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quia sequi earum nobis...</p>
+                <p class="center-align flow-text red-text">&pound;20.00</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonies" class="bg-glosswhite scrollspy">
+        <div class="rule center bg-tomatoes"></div>
+        <h1 class="bold text-tomatoes bold center-align">
+           Testimonies
+        </h1>
+
+        <div class="row">
+            <div class="col s12 l8 m10 push-l2 testimonies owl-carousel">
+                <div class="card transparent z-depth-0 owl-item">
+                    <div class="card-content">
+                        <p class="red-text flow-text">
+                            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, necessitatibus. Eveniet natus, dolorum nam similique et dolorem ab ipsam assumenda velit quasi nulla beatae, aliquid alias quam iste delectus atque."
+                        </p>
+                        <div class="customer-details">
+                            <img src="customers/person_3_sq.jpg" class="responsive-img circle" style="width: 100px;height: 100px"> 
+                            <pclass="bold">John Wick</p>
+                            <span class="grey-text text-lighten-2">
+                                C.E.O - XYZ Company
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card transparent z-depth-0 owl-item">
+                    <div class="card-content">
+                        <p class="red-text flow-text">
+                            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, necessitatibus. Eveniet natus, dolorum nam similique et dolorem ab ipsam assumenda velit quasi nulla beatae, aliquid alias quam iste delectus atque."
+                        </p>
+
+                        <div class="customer-details">
+                            <img src="customers/person_4_sq.jpg" class="responsive-img circle" style="width: 100px;height: 100px"> 
+                            <pclass="bold">John Wick</p>
+                            <span class="grey-text text-lighten-2">
+                                C.E.O - XYZ Company
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="scrollspy">
+        <div class="rule center bg-tomatoes"></div>
+        <h1 class="bold text-tomatoes bold center-align">
+           Blogg
+        </h1>
+
+        <div class="row">
+            <div class="col s12 l6">
+                <div class="card z-depth-">
+                    <div class="card-image">
+                        <img src="images/slider/fried-meat-on-white-plate-2338407.jpg" class="responsive-img">
+                    </div>
+                    <div class="card-content">
+                        <h5 class="red-text">How To Prepare Corn Dogs</h5>
+                        <p><i class="material-icons left">event</i> April 30, 2020</p>
+
+                        <p class="grey-text text-lighten-1" style="margin-top:2rem">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos vel sapiente magni quidem? Sapiente magnam quis officia iste.
+                        </p>
+
+                        <a class="btn red darken-2 white-text" style="margin-top: .5rem">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l6">
+                <div class="card z-depth-">
+                    <div class="card-image">
+                        <img src="images/slider/ham-burger-with-vegetables-1639557.jpg" class="responsive-img">
+                    </div>
+                    <div class="card-content">
+                        <h5 class="red-text">How To Prepare Ham Burgers</h5>
+                        <p><i class="material-icons left">event</i> April 31, 2020</p>
+
+                        <p class="grey-text text-lighten-1" style="margin-top:2rem">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos vel sapiente magni quidem? Sapiente magnam quis officia iste.
+                        </p>
+
+                        <a class="btn red darken-2 white-text" style="margin-top: .5rem">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- footer -->
+    <footer class="page-footer red">
+        <div class="row">
+            <div class="col s12 l4">
+                <h5>About Us</h5>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae quam nisi in optio eligendi voluptate officia magni a? In ad placeat vel molestiae suscipit id dicta sit iste rem nulla.</p>
+            </div>
+            <div class="col s12 l4">
+                <h5 class="white-text bold">Quick Links</h5>
+                <ul>
+                    <li><a href="" class="grey-text">Orders</a></li>
+                    <li><a href="" class="grey-text">Recipe</a></li>
+                    <li><a href="" class="grey-text">Services</a></li>
+                    <li><a href="" class="grey-text">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col s12 l4 hide-on-med-and-down">
+                <h5 class="bold white-text">Opening Hours</h5>
+                <p>8:AM to 10:00PM</p>
+                <h5 class="bold white-text">Social Media Links</h5>
+                <p class="white-text">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-twitter"></i>
+                </p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <di class="container">
+                <p class="flow-text center-align">&copy; Kalashin, 2020</p>
+            </di>
+        </div>
+    </footer>
+
+<script src="assets/lib/font awesome/all.js"></script>
+<script src="assets/lib/materialize/materialize.min.js"></script>
+<script src="assets/lib/owl/owl.carousel.min.js"></script>
+<script src="assets/lib/aos/aos.js"></script>
+<script src="assets/scripts/app.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

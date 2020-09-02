@@ -1,0 +1,235 @@
+*, *::before, *::after {
+  margin: 0;
+  font-family: consolas;
+  font-size: 14px;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#header {
+  background: url(../../images/slider/food-dinner-lunch-unhealthy-70497.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1800px) {
+  #header {
+    min-height: 700px;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
+            clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
+  }
+  #header .nav-wrapper {
+    background: transparent;
+    padding: .1rem .3rem;
+  }
+  #header .nav-wrapper:hover {
+    background: #fff;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  #header {
+    height: 600px;
+  }
+  #header .nav-wrapper {
+    background: #fff;
+    padding: .1rem .3rem;
+  }
+}
+
+#services {
+  position: relative;
+  z-index: 2;
+}
+
+#services .row {
+  padding: .5rem;
+}
+
+#services .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#services .box {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#services .box .spoon {
+  width: 35px;
+  height: 35px;
+  fill: #fff;
+}
+
+.rule {
+  display: block;
+  width: 100px;
+  height: 4px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 1rem;
+}
+
+#about {
+  padding-top: 1rem;
+}
+
+#about .col {
+  margin-bottom: .5rem;
+}
+
+#special-menu {
+  padding-top: 2rem;
+}
+
+#special-menu .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 20px;
+  height: 5px;
+  position: relative;
+  left: 50%;
+  top: 1rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #ddd !important;
+}
+
+@media screen and (max-width: 670px) {
+  #special-menu .owl-dot {
+    left: 35%;
+  }
+}
+
+#special-menu .owl-dot.active {
+  background-color: #ff5821 !important;
+}
+
+#special-menu .owl-carousel {
+  display: block;
+}
+
+#special-menu .owl-carousel .owl-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-transition: .4s all;
+  transition: .4s all;
+  position: relative;
+}
+
+#special-menu .owl-carousel .owl-item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#special-menu .owl-carousel .owl-item:hover .circle-div {
+  border-color: #fff;
+  background: #D61800;
+}
+
+#special-menu .owl-carousel .owl-item .circle-div {
+  width: 150px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: .4s all;
+  transition: .4s all;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #fff;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 2rem;
+  color: #fff;
+  border-radius: 50%;
+  background: transparent;
+}
+
+#special-menu .owl-carousel .owl-item .food-name {
+  position: absolute;
+  top: 65%;
+  -webkit-transform: translateY(-65%);
+          transform: translateY(-65%);
+}
+
+#menu .col {
+  padding: .5rem;
+  height: 210px;
+  overflow: hidden;
+}
+
+#testimonies .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 20px;
+  height: 5px;
+  position: relative;
+  left: 50%;
+  top: 1rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #ddd !important;
+}
+
+#testimonies .owl-dot.active {
+  background-color: #ff5821 !important;
+}
+
+#testimonies .customer-details {
+  margin-top: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+/*# sourceMappingURL=style.css.map */
